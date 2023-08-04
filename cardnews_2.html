@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분리수거 방법</title>
+    <link rel="icon" href="images/ecology.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main_banner {
+            text-align: center;
+            max-width: 700px;
+
+        }
+
+        .rap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e1fcff;
+        }
+
+        .main_banner img {
+            width: 100%;
+        }
+
+        .swiper-button-next {
+            color: #345d62;
+        }
+
+        .swiper-button-prev {
+            color: #345d62;
+        }
+
+        .swiper-pagination span {
+            background-color: #345d62;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rap">
+        <div class="swiper main_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/2-1.jpg" alt="분리수거1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/2-2.jpg" alt="분리수거2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/2-3.jpg" alt="분리수거3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/2-4.jpg" alt="분리수거4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/2-5.jpg" alt="분리수거5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/2-6.jpg" alt="분리수거6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/2-7.jpg" alt="분리수거7">
+                </div>
+            </div><!--swiper-wrapper-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div><!--swiper-->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".main_banner", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
